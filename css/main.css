@@ -284,11 +284,17 @@ header nav .form i {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   cursor: pointer;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
 }
 .landing ul li:last-of-type {
   margin: 0;
 }
-.landing ul li.active {
+.landing ul li.active,
+.landing ul li:hover {
   background-color: var(--main-color);
   border-color: var(--main-color);
 }
@@ -417,6 +423,7 @@ header nav .form i {
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .portfolio .container .shuffle li {
@@ -561,6 +568,7 @@ header nav .form i {
   border: none;
   padding: 10px 20px;
   color: white;
+  cursor: pointer;
 }
 /* end video */
 /* Start about */
@@ -1043,7 +1051,21 @@ footer p:not(.copy-right) {
   max-width: 200px;
 }
 footer .social-icons i {
-  padding: 10px 15px;
+  margin: 10px 15px;
+  color: white;
+  cursor: pointer;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+}
+footer .social-icons i:hover {
+  color: var(--main-color);
+}
+footer .social-icons a {
+  color: #fff;
+  cursor: default;
 }
 footer .copy-right {
   margin-top: 60px;
@@ -1053,3 +1075,4 @@ footer .copy-right span {
   color: var(--main-color);
 }
 /* End Footer */
+
