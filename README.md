@@ -1,2 +1,2 @@
-# HTML-CSS-Kasper-Template
+# Kasper-Template
 Kasper Template
