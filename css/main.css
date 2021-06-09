@@ -126,11 +126,8 @@ header nav .menu {
   color: white;
   font-size: 22px;
 }
-header nav ul {
-  display: none;
-}
-header nav .links:hover ul {
-  display: flex;
+header nav .links ul {
+  display: none ;
   flex-direction: column;
   position: absolute;
   top: 100%;
@@ -151,6 +148,7 @@ header nav ul li a {
   z-index: 2;
   position: relative;
   color: white;
+  user-select: none;
 }
 @media (min-width: 768px) {
   header nav .menu {

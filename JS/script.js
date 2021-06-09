@@ -62,6 +62,19 @@ function removeAllActiveClasses() {
   images.forEach(img => img.classList.remove('active'));
   bullets.forEach(bullet => bullet.classList.remove('active'));
 }
+// Start menu
+let menuBtn = document.getElementById('menuBtn'),
+  menuLinks = document.getElementById('menu');
+menuBtn.addEventListener('click', () => {
+  if (menuLinks.style.display === "flex") {
+    menuLinks.style.display = "none";
+  } else {
+    menuLinks.style.display = "flex";
+  }
+});
+
+
+
 // start filter portfolio
 const buttons = document.querySelectorAll(".portfolio li");
 const boxs = document.querySelectorAll(".box");
@@ -92,14 +105,14 @@ function theChecker() {
   testimonialBullets[currentTestimonialSlide - 1].classList.add('active');
   testimonial[currentTestimonialSlide - 1].classList.add('active');
   if (currentTestimonialSlide == 1) {
-    testimonial[1].classList.add('right')
+    testimonial[1].classList.add('right');
   } else {
-    testimonial[1].classList.remove('right')
+    testimonial[1].classList.remove('right');
   }
   if (currentTestimonialSlide == 3) {
-    testimonial[1].classList.add('left')
+    testimonial[1].classList.add('left');
   } else {
-    testimonial[1].classList.remove('left')
+    testimonial[1].classList.remove('left');
   }
 }
 theChecker();
